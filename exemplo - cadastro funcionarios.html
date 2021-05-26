@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro funcionarios</title>
+</head>
+
+<body>
+
+        <!-- hidden uso para ir as informações para o banco de dados -->
+        <form action="salvar" method="post">
+          <fieldset>
+            <legend>Dados pessoais</legend>
+            <input type="hidden" name="codigo">
+            <label>Nome</label>
+            <input type="text" placeholder="Nome"><br>
+            <label>Email</label>
+            <input type="email" placeholder="Email"><br>
+            <label>Telefone</label>
+            <input type="tel"  placeholder="Telefone">
+          </fieldset>
+          <fieldset>
+            <legend>Beneficios</legend>
+            <label><input type="checkbox"> Unimed </label>
+            <label><input type="checkbox"> Uniodonto </label>
+          </fieldset>
+          <fieldset>
+            <legend>Alimentacao</legend>
+            <label><input type="radio" name="alimentacao" value="1"> Cartao Refeicao</label>
+            <label><input type="radio" name="alimentacao" value="2"> Cartao Alimentacao </label>
+            <!-- para ter opção de selecionar só um, coloco o value diferente -->
+          </fieldset>
+      
+        </form>
+    
+</body>
+</html>
